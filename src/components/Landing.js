@@ -1,7 +1,7 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { useRef } from "react";
 // import ScrollTrigger from "react-scroll-trigger";
-import eg from "../images/eg.jpg";
+import eg from "../images/EG.JPG";
 import arrow from "../images/arrow.png";
 
 const Landing = () => {
@@ -77,6 +77,9 @@ const Landing = () => {
             </Col>
           </Row>
         </Container>
+      </div>
+      <div id='footer'>
+
       </div>
     </div>
   );

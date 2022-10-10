@@ -30,7 +30,7 @@
   animation: fadeFromLeft 3s;
   margin-top: 10vh;
   margin-right: 3vw;
-  text-shadow: 0px 0px 20px gray;
+  text-shadow: 0px 0px 20px lightgray;
  }
 
  #hello {
@@ -88,14 +88,10 @@
   }
 }
 
-/* #bg-img1 {
-  position: absolute;
-  z-index: -1;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.8;
-} */
+#learn-more {
+  text-shadow: 0px 0px 20px lightgray;
+  opacity: 0.55;
+}
 
 .arrow-img {
   position: absolute;
@@ -103,6 +99,10 @@
   display: flex;
   top: 0;
   bottom: 0;
+  opacity: 0.3;
+}
+
+.bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -126,10 +126,6 @@
   }
 }
 
-#learn-more {
-  text-shadow: 0px 0px 20px gray;
-}
-
 .div1 {
   top: 0;
   bottom: 0;
@@ -143,7 +139,7 @@
   background-image: url(./images/vassar.jpg);
   background-size: cover;
   width: cover;
-  background-color: gray;
+  background-color: lightgray;
   background-attachment: fixed;
 }
 
@@ -158,7 +154,7 @@
 
 .div4 {
   height: 100vh;
-  background-image: url(./images/nyc.jpg);
+  background-image: url(./images/NYC.JPG);
   background-size: cover;
   width: cover;
   background-color: white;
