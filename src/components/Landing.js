@@ -5,7 +5,7 @@ import eg from "../images/eg.jpg";
 import arrow from "../images/arrow.png";
 
 const Landing = () => {
-   const div2ref = useRef();
+  const div2ref = useRef();
 
   const handleClick = () => {
     div2ref.current.scrollIntoView({ behavior: "smooth" });
