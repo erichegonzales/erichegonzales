@@ -2,8 +2,8 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation';
 import Landing from './components/Landing';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+// import Projects from './components/Projects';
+// import Contact from './components/Contact';
 
 function App() {
   return (

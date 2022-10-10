@@ -1,7 +1,6 @@
-import { Container, Image, Row, Col, Card } from "react-bootstrap";
-import ScrollTrigger from "react-scroll-trigger";
+import { Container, Image, Row, Col } from "react-bootstrap";
+// import ScrollTrigger from "react-scroll-trigger";
 import EG from "../images/EG.JPG";
-import NYC from "../images/NYC.JPG";
 
 const Landing = () => {
   return (
