@@ -1,11 +1,12 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 // import ScrollTrigger from "react-scroll-trigger";
-import EG from "../images/EG.JPG";
+import eg from "../images/eg.jpg";
+import arrow from "../images/arrow.png";
 
 const Landing = () => {
   return (
-    <>
-      <div id="div1">
+    <div id="wrapper">
+      <div className="div1">
         <Container fluid>
           <Row id="home-col1"></Row>
           <Row>
@@ -18,16 +19,54 @@ const Landing = () => {
               </div>
             </Col>
             <Col xs={5}>
-              <Image id="img-me" roundedCircle src={EG} fluid />
+              <Image id="img-me" roundedCircle src={eg} fluid />
             </Col>
             <Col></Col>
+        <Image className="arrow-img bounce" src={arrow} />
           </Row>
         </Container>
       </div>
-      <div id="div1">
-        <p>test</p>
+      <div className="div2">
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col>
+              <div></div>
+            </Col>
+          </Row>
+        </Container>
       </div>
-    </>
+      <div className="div3">
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col>
+              <div></div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="div4">
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col>
+              <div></div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="div5">
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col>
+              <div></div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
   );
 };
 
