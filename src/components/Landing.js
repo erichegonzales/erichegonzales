@@ -1,9 +1,16 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
+import { useRef } from "react";
 // import ScrollTrigger from "react-scroll-trigger";
 import eg from "../images/eg.jpg";
 import arrow from "../images/arrow.png";
 
 const Landing = () => {
+   const div2ref = useRef();
+
+  const handleClick = () => {
+    div2ref.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div id="wrapper">
       <div className="div1">
@@ -22,11 +29,16 @@ const Landing = () => {
               <Image id="img-me" roundedCircle src={eg} fluid />
             </Col>
             <Col></Col>
-        <Image className="arrow-img bounce" src={arrow} />
+            <h7 id='learn-more'>Learn more</h7>
+            <Image
+              className="arrow-img bounce"
+              src={arrow}
+              onClick={handleClick}
+            />
           </Row>
         </Container>
       </div>
-      <div className="div2">
+      <div className="div2" ref={div2ref}>
         <Container>
           <Row>
             <Col></Col>
