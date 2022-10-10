@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-color: #282c34; */
 }
 
 .App-logo {
@@ -36,3 +37,96 @@
     transform: rotate(360deg);
   }
 }
+
+#nav-bar {
+  height: 0.8in;
+  position: sticky;
+  animation: fadeFromTop 3s;
+}
+
+ #home-col1 {
+  height: 100px;
+ }
+
+ #intro {
+  font-family: Georgia, serif;
+  margin-top: 0.5in;
+  margin-right: 0.5in;
+  animation: fadeFromLeft 3s;
+ }
+
+ #hello {
+  text-align: left;
+  font-size: 100px;
+ }
+
+ #eriche {
+  font-size: 100px;
+ }
+
+ #engineer {
+  text-align: right;
+  font-size: 50px;
+ }
+
+ #gap-col {
+  width: 10%;
+ }
+
+ #img-me {
+  animation: fadeFromRight 3s;
+ }
+
+ /* @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ } */
+
+ @keyframes fadeFromTop {
+   0% {
+     opacity: 0;
+     transform: translateY(-300px);
+   }
+
+   100% {
+     opacity: 1;
+     transform: translateY(0px);
+   }
+ }
+
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+#div1 {
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  display: inline-block;
+}
+
