@@ -1,9 +1,11 @@
-import { Container } from 'react-bootstrap'
+import { Container, Image, Row, Col } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

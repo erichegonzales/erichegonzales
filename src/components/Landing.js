@@ -1,15 +1,27 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
-import { useRef } from "react";
-// import ScrollTrigger from "react-scroll-trigger";
 import eg from "../images/EG.JPG";
 import arrow from "../images/arrow.png";
+import { useRef } from "react";
 
 const Landing = () => {
   const div2ref = useRef();
+  const div3ref = useRef();
+  const div4ref = useRef();
+  const div5ref = useRef();
 
-  const handleClick = () => {
-    div2ref.current.scrollIntoView({ behavior: "smooth" });
-  }
+  const handleDiv2Click = () => {
+    div2ref.current.scrollIntoView({ behavior: "smooth", duration: 2000 });
+  };
+
+  const handleDiv3Click = () => {
+    div3ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleDiv4Click = () => {
+    div4ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleDiv5Click = () => {
+    div5ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div id="wrapper">
@@ -29,11 +41,11 @@ const Landing = () => {
               <Image id="img-me" roundedCircle src={eg} fluid />
             </Col>
             <Col></Col>
-            <h7 id='learn-more'>Learn more</h7>
+            <p id="learn-more">Learn more</p>
             <Image
-              className="arrow-img bounce"
+              className="arrow-img1 bounce"
               src={arrow}
-              onClick={handleClick}
+              onClick={handleDiv2Click}
             />
           </Row>
         </Container>
@@ -41,45 +53,118 @@ const Landing = () => {
       <div className="div2" ref={div2ref}>
         <Container>
           <Row>
-            <Col></Col>
             <Col>
-              <div></div>
+              <div className="left-div who">
+                <h1>Who I Am</h1>
+                <p>
+                  I am a software engineer experienced in creating full-stack
+                  applications. My skills include, but are not limited to, Ruby,
+                  Rails, JavaScript, React, Python, Django, Java, HTML, CSS,
+                  Git, PostgreSQL, and MySQL. I graduated from Flatiron School
+                  bootcamp in October 2022 where I learned JavaScript with React
+                  and Ruby on Rails. I'm pursuing full-stack or back-end
+                  development roles to begin my career in the tech industry.
+                </p>
+              </div>
             </Col>
+            <Col></Col>
+            <Col></Col>
+            <Image
+              className="arrow-img2 bounce"
+              src={arrow}
+              onClick={handleDiv3Click}
+            />
           </Row>
         </Container>
       </div>
-      <div className="div3">
+      <div className="div3" ref={div3ref}>
         <Container>
           <Row>
             <Col></Col>
+            <Col></Col>
             <Col>
-              <div></div>
+              <div className="right-div bring">
+                <h1>What I Bring </h1>
+                <p>
+                  I bring my passion to learn, drive to grow, flexibility to
+                  change, and ability to solve problems from a unique
+                  perspective. I bring myself as an open-minded individual, an
+                  explorer of new knowledge and skills, and a strong person
+                  unafraid of speaking up for what I believe in. I bring my
+                  experiences as a team leader and collaborator who asks for
+                  help and helps others. That's what I will contribute, along
+                  with a bright smile, a bubbly personality, and a pleasure to
+                  work with.
+                </p>
+              </div>
             </Col>
+            <Image
+              className="arrow-img3 bounce"
+              src={arrow}
+              onClick={handleDiv4Click}
+            />
           </Row>
         </Container>
       </div>
-      <div className="div4">
+      <div className="div4" ref={div4ref}>
+        <Container>
+          <Row>
+            <Col>
+              <div className="left-div values">
+                <h1>Values {"& "} Interests</h1>
+                <p>
+                  I value a growth mindset. I aim to have positive
+                  impacts on the world and improving the lives of others. I
+                  enjoy creating and building things. I value diversity,
+                  inclusivity, equity, and bringing awareness. I value a team
+                  with initiative, and a leader that effectively guides and
+                  communicates with their team. I'm interested in being a part
+                  of a committed team with hard-working people that values
+                  personal well-being, responsibility, and accountability.
+                </p>
+              </div>
+            </Col>
+            <Col></Col>
+            <Col></Col>
+            <Image
+              className="arrow-img4 bounce"
+              src={arrow}
+              onClick={handleDiv5Click}
+            />
+          </Row>
+        </Container>
+      </div>
+      <div className="div5" ref={div5ref}>
         <Container>
           <Row>
             <Col></Col>
-            <Col>
-              <div></div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="div5">
-        <Container>
-          <Row>
             <Col></Col>
             <Col>
-              <div></div>
+              <div className="right-div background">
+                <h1>My Background</h1>
+                <p>
+                  I graduated from Vassar College in May 2022 with a Bachelor's
+                  degree, double-majoring in Physics and Astronomy. I studied
+                  topics such as Astrophysics, Quantum Mechanics,
+                  Thermodynamics, Solid State Physics, and more. I learned Java
+                  OOP in a Data Structures {"& "} Algorithms course, and I
+                  completed my senior thesis using Python. I have taken Calculus
+                  I/II, Multivariable Calculus, Linear Algebra, Applied Math,
+                  and Statistics.
+                </p>
+              </div>
             </Col>
+            {/* <Image
+              className="arrow-img3 bounce"
+              src={arrow}
+              onClick={handleDiv4Click}
+            /> */}
           </Row>
         </Container>
       </div>
-      <div id='footer'>
-
+      <div id="footer">
+        <br />
+        <p>@ 2022 by Eriche Gonzales. All Rights Reserved. </p>
       </div>
     </div>
   );

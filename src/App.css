@@ -14,12 +14,21 @@
 #nav-bar {
   height: 8vh;
   font-size: 1.5vw;
-  position: sticky;
+  /* position: sticky; */
   animation: fadeFromTop 3s;
 }
 
 .nav-item {
   margin-left: 20vw;
+}
+
+#logo-circle {
+  background-color: white;
+  border-radius: 0%;
+  width: 2.9vw;
+  border-style: ridge;
+  border-color: black;
+  text-shadow: 0px 0px 1px gray;
 }
 
  #home-col1 {
@@ -64,6 +73,30 @@
    }
  }
 
+ @keyframes fadeFromBottom {
+   0% {
+    opacity: 0;
+    transform: translateY(300px);
+   }
+
+   100% {
+     opacity: 0.55;
+      transform: translateY(0px);
+   }
+ }
+
+ @keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 @keyframes fadeFromLeft {
   0% {
     opacity: 0;
@@ -91,15 +124,18 @@
 #learn-more {
   text-shadow: 0px 0px 20px lightgray;
   opacity: 0.55;
+  animation: fadeFromBottom 3s;
 }
 
-.arrow-img {
+.arrow-img1 {
   position: absolute;
   transform: scale(0.05);
   display: flex;
   top: 0;
   bottom: 0;
   opacity: 0.3;
+  z-index: 1;
+  animation: fadeIn 3s
 }
 
 .bounce {
@@ -129,14 +165,14 @@
 .div1 {
   top: 0;
   bottom: 0;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   background-attachment: fixed;
 }
 
 .div2 {
   height: 100vh;
-  background-image: url(./images/vassar.jpg);
+  background-image: url(./images/laptop.jpg);
   background-size: cover;
   width: cover;
   background-color: lightgray;
@@ -145,7 +181,7 @@
 
 .div3 {
   height: 100vh;
-  background-image: url(./images/stars.jpg);
+  background-image: url(./images/NYC.JPG);
   background-size: cover;
   width: cover;
   background-color: white;
@@ -154,7 +190,7 @@
 
 .div4 {
   height: 100vh;
-  background-image: url(./images/NYC.JPG);
+  background-image: url(./images/vassar.jpg);
   background-size: cover;
   width: cover;
   background-color: white;
@@ -163,11 +199,83 @@
 
 .div5 {
   height: 100vh;
-  background-image: url(./images/laptop.jpg);
+  background-image: url(./images/stars.jpg);
   background-size: cover;
   width: cover;
   background-color: white;
   background-attachment: fixed;
 }
 
+.left-div {
+  font-size: larger;
+  padding: 11vh;
+  padding-top: 12vh;
+  margin: 10vh;
+  margin-top: 15vh;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  background-color: white;
+}
 
+.right-div {
+  font-size: larger;
+  padding: 11vh;
+  padding-top: 12vh;
+  margin: 10vh;
+  margin-top: 15vh;
+  margin-right: 20vh;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.who {
+  padding-top: 14vh;
+}
+
+.values {
+  padding-top: 14vh;
+}
+
+.background {
+  padding-top: 14vh;
+}
+
+.arrow-img2 {
+  position: absolute;
+  transform: scale(0.05);
+  display: flex;
+  z-index: 2;
+  top: 100vh;
+  filter: invert(100%);
+  opacity: 0.5;
+  left: 0.04vw;
+}
+
+.arrow-img3 {
+  position: absolute;
+  transform: scale(0.05);
+  display: flex;
+  z-index: 2;
+  top: 200vh;
+  filter: invert(100%);
+  opacity: 0.5;
+  left: 0.04vw;
+}
+
+.arrow-img4 {
+  position: absolute;
+  transform: scale(0.05);
+  display: flex;
+  z-index: 2;
+  top: 300vh;
+  filter: invert(100%);
+  opacity: 0.5;
+  left: 0.04vw;
+}
+
+#footer {
+  height: 10vh;
+}

@@ -1,12 +1,10 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-const Navigation = () => {
+const Navigation = ({ div2ref, div3ref, div4ref, div5ref }) => {
   return (
     <Navbar id="nav-bar" bg="light" expand="lg">
       <Container id="nav-container">
-        <Navbar.Brand href="/">
-          EG
-        </Navbar.Brand>
+        <Navbar.Brand href="/" id="logo-circle">EG</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -16,7 +14,7 @@ const Navigation = () => {
             <Nav.Link className="nav-item" href="/projects">
               Projects
             </Nav.Link>
-            <Nav.Link className="nav-item" href="/contact">
+            <Nav.Link className="nav-item" href="/#contact">
               Contact
             </Nav.Link>
           </Nav>
@@ -24,6 +22,6 @@ const Navigation = () => {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Navigation
