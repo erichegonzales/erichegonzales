@@ -1,26 +1,36 @@
-import { Container, Image, Row, Col } from "react-bootstrap";
+import { Container, Image, Row, Col, Card, Button } from "react-bootstrap";
 import eg from "../images/EG.JPG";
 import arrow from "../images/arrow.png";
+import project from "../images/project.jpg";
+import contact from "../images/contact.jpg";
 import { useRef } from "react";
+import { IoMdImages } from "react-icons/io";
 
 const Landing = () => {
   const div2ref = useRef();
   const div3ref = useRef();
   const div4ref = useRef();
   const div5ref = useRef();
+  const div6ref = useRef();
 
-  const handleDiv2Click = () => {
+  const handleDiv1Click = () => {
     div2ref.current.scrollIntoView({ behavior: "smooth", duration: 2000 });
   };
 
-  const handleDiv3Click = () => {
+  const handleDiv2Click = () => {
     div3ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleDiv4Click = () => {
+
+  const handleDiv3Click = () => {
     div4ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  const handleDiv5Click = () => {
+
+  const handleDiv4Click = () => {
     div5ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleDiv5Click = () => {
+    div6ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -41,11 +51,11 @@ const Landing = () => {
               <Image id="img-me" roundedCircle src={eg} fluid />
             </Col>
             <Col></Col>
-            <p id="learn-more">Learn more</p>
+            <p id="learn-more">About me</p>
             <Image
               className="arrow-img1 bounce"
               src={arrow}
-              onClick={handleDiv2Click}
+              onClick={handleDiv1Click}
             />
           </Row>
         </Container>
@@ -70,11 +80,12 @@ const Landing = () => {
             <Col></Col>
             <Col></Col>
             <Image
-              className="arrow-img2 bounce"
+              className="arrow img2 bounce"
               src={arrow}
-              onClick={handleDiv3Click}
+              onClick={handleDiv2Click}
             />
           </Row>
+          {/* <p className="img-cred">Photo by Christopher Gower on Unsplash</p> */}
         </Container>
       </div>
       <div className="div3" ref={div3ref}>
@@ -88,22 +99,23 @@ const Landing = () => {
                 <p>
                   I bring my passion to learn, drive to grow, flexibility to
                   change, and ability to solve problems from a unique
-                  perspective. I bring myself as an open-minded individual, an
-                  explorer of new knowledge and skills, and a strong person
-                  unafraid of speaking up for what I believe in. I bring my
+                  perspective. I bring my qualities as an open-minded
+                  individual, an explorer of new knowledge and skills, and a
+                  person with a strong and resilient mindset. I bring my
                   experiences as a team leader and collaborator who asks for
-                  help and helps others. That's what I will contribute, along
+                  help when needed and helps others. That's what I contribute, along
                   with a bright smile, a bubbly personality, and a pleasure to
                   work with.
                 </p>
               </div>
             </Col>
             <Image
-              className="arrow-img3 bounce"
+              className="arrow img3 bounce"
               src={arrow}
-              onClick={handleDiv4Click}
+              onClick={handleDiv3Click}
             />
           </Row>
+          {/* <p className="img-cred">Photo by Emiliano Bar on Unsplash</p> */}
         </Container>
       </div>
       <div className="div4" ref={div4ref}>
@@ -113,8 +125,8 @@ const Landing = () => {
               <div className="left-div values">
                 <h1>Values {"& "} Interests</h1>
                 <p>
-                  I value a growth mindset. I aim to have positive
-                  impacts on the world and improving the lives of others. I
+                  I aim to have positive impacts and improve the lives of
+                  others. I value growth mindsets and genuine connections. I
                   enjoy creating and building things. I value diversity,
                   inclusivity, equity, and bringing awareness. I value a team
                   with initiative, and a leader that effectively guides and
@@ -127,11 +139,12 @@ const Landing = () => {
             <Col></Col>
             <Col></Col>
             <Image
-              className="arrow-img4 bounce"
+              className="arrow img4 bounce"
               src={arrow}
-              onClick={handleDiv5Click}
+              onClick={handleDiv4Click}
             />
           </Row>
+          <p className="img-cred">Photo by Karl Rabe on Flickr</p>
         </Container>
       </div>
       <div className="div5" ref={div5ref}>
@@ -154,17 +167,64 @@ const Landing = () => {
                 </p>
               </div>
             </Col>
-            {/* <Image
-              className="arrow-img3 bounce"
+            <Image
+              className="arrow img5 bounce"
               src={arrow}
-              onClick={handleDiv4Click}
-            /> */}
+              onClick={handleDiv5Click}
+            />
           </Row>
+          {/* <p className="img-cred">Photo by Rafael Cerqueira on Unsplash</p> */}
+        </Container>
+      </div>
+      <div className="div6" ref={div6ref}>
+        <Container>
+          <h1 id="interested">Want to learn more?</h1>
+
+          <div className="div6-content">
+            <Row>
+              <Col>
+                <Card style={{ width: "35rem" }}>
+                  <Card.Img variant="top" src={project} />
+                  {/* <Card.ImgOverlay>
+                    <p className="img-cred card-cred">
+                      Photo by Markus Winkler on Unsplash
+                    </p>
+                  </Card.ImgOverlay> */}
+                  <Card.Body>
+                    <hr />
+                    <Card.Text>Browse the projects I've worked on</Card.Text>
+                    <Button variant="primary">Visit page</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card style={{ width: "35rem" }}>
+                  <Card.Img variant="top" src={contact} />
+                  {/* <Card.ImgOverlay>
+                    <p className="img-cred card-cred">
+                      Photo by Pawel Czerwinski on Unsplash
+                    </p>
+                  </Card.ImgOverlay> */}
+                  <Card.Body>
+                    <hr />
+                    <Card.Text>Find me online or send me a message</Card.Text>
+                    <Button variant="primary">Visit page</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </div>
         </Container>
       </div>
       <div id="footer">
         <br />
-        <p>@ 2022 by Eriche Gonzales. All Rights Reserved. </p>
+        <Row>
+          <p>@ 2022 by Eriche Gonzales. </p>
+        </Row>
+        <Row>
+          <p></p>
+        </Row>
+        <br />
       </div>
     </div>
   );
