@@ -14,7 +14,7 @@ const Navigation = ({ div2ref, div3ref, div4ref, div5ref }) => {
             <Nav.Link className="nav-item" href="/projects">
               Projects
             </Nav.Link>
-            <Nav.Link className="nav-item" href="/#contact">
+            <Nav.Link className="nav-item" href="/contact">
               Contact
             </Nav.Link>
           </Nav>

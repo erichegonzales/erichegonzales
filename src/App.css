@@ -14,7 +14,6 @@
 #nav-bar {
   height: 8vh;
   font-size: 1.5vw;
-  /* position: sticky; */
   animation: fadeFromTop 3s;
 }
 
@@ -206,9 +205,6 @@
   justify-content: center;
   font-size: 25px;
   background-color: white;
-  /* border-style: ridge;
-  border-width: 0.4cm;
-  border-color: gainsboro; */
 }
 
 #interested {
@@ -310,4 +306,12 @@
   float: none;
   margin-top: 40vh;
   transform: scale(0.5);
+}
+
+.projects-div {
+  margin: 5vh;
+}
+
+#projects-header {
+  margin: 3vh;
 }

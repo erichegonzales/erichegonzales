@@ -1,27 +1,27 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom'
-import Navigation from './components/Navigation';
-import Landing from './components/Landing';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Navigation from "./components/Navigation";
+import Landing from "./components/Landing";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
+  const location = useLocation();
 
   return (
-    <div className="App">
-      <Navigation />
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <Landing />
-          }
-        />
-        <Route exact path="/projects" element={<Projects />} />
-        <Route exact path={"/#contact"} element={<Contact />} />
-      </Routes>
-    </div>
+    <>
+      <div className="App">
+        <Navigation />
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.pathname}>
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/projects" element={<Projects />} />
+            <Route exact path={"/contact"} element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
+    </>
   );
 }
 
