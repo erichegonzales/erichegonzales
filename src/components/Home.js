@@ -6,7 +6,7 @@ import contact from "../images/contact.jpg";
 import { useRef } from "react";
 import Transitions from "./Transitions";
 
-const Landing = () => {
+const Home = () => {
   const div2ref = useRef();
   const div3ref = useRef();
   const div4ref = useRef();
@@ -201,7 +201,6 @@ const Landing = () => {
                         </Card.Text>
                         <Button variant="primary">Visit page</Button>
                       </Card.Body>
-                      <Card.Footer></Card.Footer>
                     </Card>
                   </Col>
                   <Col>
@@ -219,7 +218,6 @@ const Landing = () => {
                         </Card.Text>
                         <Button variant="primary">Visit page</Button>
                       </Card.Body>
-                      <Card.Footer></Card.Footer>
                     </Card>
                   </Col>
                 </Row>
@@ -239,4 +237,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Home;

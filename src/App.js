@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navigation from "./components/Navigation";
-import Landing from "./components/Landing";
+import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
@@ -15,7 +15,7 @@ function App() {
         <Navigation />
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
-            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/" element={<Home />} />
             <Route exact path="/projects" element={<Projects />} />
             <Route exact path={"/contact"} element={<Contact />} />
           </Routes>

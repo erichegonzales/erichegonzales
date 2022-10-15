@@ -14,7 +14,7 @@
 #nav-bar {
   height: 8vh;
   font-size: 1.5vw;
-  animation: fadeFromTop 3s;
+  /* animation: fadeFromTop 3s; */
 }
 
 .nav-item {
@@ -196,7 +196,7 @@
 
 .div6 {
   margin: 10vh;
-  padding-top: 12vh;
+  padding-top: 10vh;
   padding-left: 2vw;
   height: 90vh;
   background-size: cover;
@@ -215,7 +215,7 @@
 
 .div6-content {
   padding: 1vh;
-  padding-top: 5vh;
+  padding-top: 4vh;
   border-radius: 20%;
 }
 
