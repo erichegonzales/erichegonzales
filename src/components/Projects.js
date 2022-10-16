@@ -3,6 +3,7 @@ import { Card, Container } from "react-bootstrap";
 
 const Projects = () => {
   const dot = "·";
+  
   return (
     <Transitions>
       <Container className="p-4">

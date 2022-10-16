@@ -128,12 +128,12 @@ const Home = () => {
                   <h1>Values {"& "} Interests</h1>
                   <p>
                     I aim to have positive impacts and improve the lives of
-                    others. I value growth mindsets and genuine connections. I
-                    enjoy creating and building things. I value diversity,
-                    inclusivity, equity, and bringing awareness. I value a team
+                    others. I enjoy creating and building things. I care about
+                    diversity, inclusivity, equity, and bringing awareness. I
+                    look for growth mindsets and genuine connections. I value a team
                     with initiative, and a leader that effectively guides and
-                    communicates with their team. I'm interested in being a part
-                    of a committed team with hard-working people that values
+                    communicates with their team. I'm interested in being part
+                    of a committed group with hard-working people that values
                     personal well-being, responsibility, and accountability.
                   </p>
                 </div>
