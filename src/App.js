@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="App">
         <Navigation />
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/projects" element={<Projects />} />
