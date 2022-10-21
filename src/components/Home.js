@@ -130,11 +130,12 @@ const Home = () => {
                     I aim to have positive impacts and improve the lives of
                     others. I enjoy creating and building things. I care about
                     diversity, inclusivity, equity, and bringing awareness. I
-                    look for growth mindsets and genuine connections. I value a team
-                    with initiative, and a leader that effectively guides and
-                    communicates with their team. I'm interested in being part
-                    of a committed group with hard-working people that values
-                    personal well-being, responsibility, and accountability.
+                    look for growth mindsets and genuine connections. I value a
+                    team with initiative, and a leader that effectively guides
+                    and communicates with their team. I'm interested in being
+                    part of a committed group with hard-working people that
+                    values personal well-being, responsibility, and
+                    accountability.
                   </p>
                 </div>
               </Col>
@@ -195,7 +196,9 @@ const Home = () => {
                     <Card.Body>
                       <hr />
                       <Card.Text>Browse the projects I've worked on</Card.Text>
-                      <Button variant="primary">Visit page</Button>
+                      <Card.Link href="/projects">
+                        <Button variant="primary">Visit page</Button>
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -210,7 +213,9 @@ const Home = () => {
                     <Card.Body>
                       <hr />
                       <Card.Text>Find me online or send me a message</Card.Text>
-                      <Button variant="primary">Visit page</Button>
+                      <Card.Link href="/contact">
+                        <Button variant="primary">Visit page</Button>
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 </Col>

@@ -143,7 +143,7 @@ const Contact = () => {
           </Form>
           <br />
 
-          <p>Checkout my LinkedIn, connect with me, or send me message </p>
+          <p>Check out my LinkedIn, connect with me, send me message </p>
           <a
             href="https://www.linkedin.com/in/erichegonzales/"
             target="_blank"
