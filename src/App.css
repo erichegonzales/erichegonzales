@@ -319,3 +319,12 @@
 .contact-div {
   text-align: left;
 }
+
+.contact-icon-size {
+  transform: scale(4);
+}
+
+.contact-icon-size:hover{
+  transform: scale(4.4);
+  transition-duration: 0.2s;
+}

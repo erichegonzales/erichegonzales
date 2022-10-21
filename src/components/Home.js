@@ -5,6 +5,7 @@ import project from "../images/project.jpg";
 import contact from "../images/contact.jpg";
 import { useRef } from "react";
 import Transitions from "./Transitions";
+import Footer from "./Footer";
 
 const Home = () => {
   const div2ref = useRef();
@@ -223,13 +224,7 @@ const Home = () => {
             </div>
           </Container>
         </div>
-        <div id="footer">
-          <br />
-          <Row>
-            <p>@ 2022 by Eriche Gonzales. </p>
-          </Row>
-          <br />
-        </div>
+        <Footer />
       </div>
     </Transitions>
   );

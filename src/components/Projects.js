@@ -1,5 +1,6 @@
 import Transitions from "./Transitions";
 import { Card, Container } from "react-bootstrap";
+import Footer from "./Footer";
 
 const Projects = () => {
   const dot = "·";
@@ -263,6 +264,7 @@ const Projects = () => {
           </Card.Footer>
         </Card>
       </Container>
+      <Footer />
     </Transitions>
   );
 };

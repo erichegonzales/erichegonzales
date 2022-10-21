@@ -2,14 +2,13 @@ import { useState } from "react";
 import { Container, Form, Row, Col, Button, Modal } from "react-bootstrap";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
-import { useNavigate } from "react-router-dom";
 import Transitions from "./Transitions";
+import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import { init } from "@emailjs/browser";
 init("REACT_APP_EMAILJS_SERVICE_ID");
 init("REACT_APP_EMAILJS_TEMPLATE_ID");
-init("REACT_APP_EMAILJS_USER_ID")
-
+init("REACT_APP_EMAILJS_USER_ID");
 
 const Contact = () => {
   const dot = "·";
@@ -22,7 +21,7 @@ const Contact = () => {
   const handleShowError = () => setShowError(true);
 
   const handleRedirect = () => {
-    window.open('https://github.com/erichegonzales?tab=repositories');
+    window.open("https://github.com/erichegonzales?tab=repositories");
   };
 
   const [formData, setFormData] = useState({
@@ -39,30 +38,30 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-      emailjs
-        .send(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          formData,
-          process.env.REACT_APP_EMAILJS_USER_ID
-        )
-        .then(
-          (result) => {
-            setFormData({
-              email: "",
-              firstName: "",
-              lastName: "",
-              subject: "",
-              message: "",
-            });
-            console.log(result.text);
-            handleShowSuccess();
-          },
-          (error) => {
-            console.log(error.text);
-            handleShowError();
-          }
-        );
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          setFormData({
+            email: "",
+            firstName: "",
+            lastName: "",
+            subject: "",
+            message: "",
+          });
+          console.log(result.text);
+          handleShowSuccess();
+        },
+        (error) => {
+          console.log(error.text);
+          handleShowError();
+        }
+      );
   };
 
   return (
@@ -142,39 +141,60 @@ const Contact = () => {
             </Button>
           </Form>
           <br />
+          <hr />
+          <br />
+          <br />
 
-          <p>Check out my LinkedIn, connect with me, send me message </p>
-          <a
-            href="https://www.linkedin.com/in/erichegonzales/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#0072b1" }}
-          >
-            <AiFillLinkedin />
-          </a>
-
-          <p>Browse my source code and GitHub repositories</p>
-
-          <a
-            href="https://github.com/erichegonzales"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#171515"}}
-          >
-            <AiFillGithub />
-          </a>
-
-          <p>Send me a direct email through Gmail</p>
-
-          <a
-            href="https://mail.google.com/mail/u/0/?fs=1&to=erichelouise@gmail.com&tf=cm"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#DB4437"}}
-          >
-            <SiGmail />
-          </a>
+          <Row>
+            <Col>
+              <a
+                href="https://www.linkedin.com/in/erichegonzales/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#0072b1" }}
+              >
+                <AiFillLinkedin className="contact-icon-size" />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://github.com/erichegonzales"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#171515" }}
+              >
+                <AiFillGithub className="contact-icon-size" />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=erichelouise@gmail.com&tf=cm"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#DB4437" }}
+              >
+                <SiGmail className="contact-icon-size" />
+              </a>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <br />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p>Check out my LinkedIn or connect with me</p>
+            </Col>
+            <Col>
+              <p>Browse my source code and GitHub repositories</p>
+            </Col>
+            <Col>
+              <p>Send me a direct email through Gmail</p>
+            </Col>
+          </Row>
         </Container>
+        <Footer />
       </Transitions>
 
       <Modal
