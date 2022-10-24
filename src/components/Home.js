@@ -53,7 +53,7 @@ const Home = () => {
                 <Image id="img-me" roundedCircle src={eg} fluid />
               </Col>
               <Col></Col>
-              <p id="learn-more">About me</p>
+              <p id="learn-more">Read more</p>
               <Image
                 className="arrow-img1 bounce"
                 src={arrow}

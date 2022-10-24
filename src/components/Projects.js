@@ -46,7 +46,8 @@ const Projects = () => {
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">
-              React {dot} Ruby on Rails {dot} Django {dot} October 2022
+              JavaScript {dot} React {dot} Ruby on Rails {dot} Django {dot}{" "}
+              October 2022
               <br /> 3 week Flatiron capstone project {dot} Made by me
             </small>
           </Card.Footer>
@@ -79,7 +80,7 @@ const Projects = () => {
           <Card.Footer>
             <small className="text-muted">
               {" "}
-              React {dot} Ruby on Rails {dot} October 2022
+              JavaScript {dot} React {dot} Ruby on Rails {dot} October 2022
               <br /> 36 hour hackathon for Girls in Tech NY {dot} Made in a
               6-person team
             </small>
@@ -112,12 +113,12 @@ const Projects = () => {
           <Card.Footer>
             <small className="text-muted">
               {" "}
-              React {dot} Ruby on Rails {dot} August 2022
+              JavaScript {dot} React {dot} Ruby on Rails {dot} August 2022
               <br /> 1 week Flatiron project {dot} Made in a 5-person team
             </small>
           </Card.Footer>
         </Card>
-        <br />
+        {/* <br />
         <Card>
           <Card.Body>
             <Card.Title>Cosmo Ticketing</Card.Title>
@@ -141,12 +142,12 @@ const Projects = () => {
           <Card.Footer>
             <small className="text-muted">
               {" "}
-              React {dot} Ruby on Rails {dot} August 2022
+              JavaScript {dot} React {dot} Ruby on Rails {dot} August 2022
               <br /> 48 hour Flatiron hackathon project {dot} Made in a 3-person
               team
             </small>
           </Card.Footer>
-        </Card>
+        </Card> */}
         <br />
         <Card>
           <Card.Body>
@@ -172,7 +173,7 @@ const Projects = () => {
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">
-              React {dot} July 2022
+              JavaScript {dot} React {dot} July 2022
               <br /> 1 week Flatiron project {dot} Made in a 2-person team
             </small>
           </Card.Footer>
@@ -202,9 +203,10 @@ const Projects = () => {
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">
-              React {dot} Vanilla JavaScript {dot} July 2022
+              Vanilla JavaScript {dot} React {dot} July 2022
               <br /> 1 week Flatiron project {dot} Made by me
-            </small>
+            </small>{" "}
+            y
           </Card.Footer>
         </Card>
         <br />
