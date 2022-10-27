@@ -25,6 +25,9 @@ const Home = () => {
   const contact =
     "https://drive.google.com/uc?id=1ZrR64TPl3fHYPBH1V6ql13BjFEYDcHnY";
 
+  const laptop =
+    "https://drive.google.com/uc?id=16JyWVkSklbnlESw1DyZJEwKznZ1PkVY4";
+
   const div2ref = useRef();
   const div3ref = useRef();
   const div4ref = useRef();
@@ -89,6 +92,7 @@ const Home = () => {
         <div className="div2" ref={div2ref}>
           <Container className="home-card-div" fluid>
             <CardGroup>
+              <Image id="laptop-img" src={laptop} />
               <Card className="home-card">
                 <Card.Body>
                   <Card.Title>Who I Am</Card.Title>

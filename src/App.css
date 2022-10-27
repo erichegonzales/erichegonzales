@@ -166,39 +166,48 @@
   padding-bottom: 5vh;
 }
 
+#laptop-img {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  justify-self: center;
+}
+
 .div2 {
   height: 100vh;
-  background-image: url("https://drive.google.com/uc?id=16JyWVkSklbnlESw1DyZJEwKznZ1PkVY4");
-  background-size: cover;
   width: 100vw;
-  background-attachment: fixed;
+  position: absolute;
+  /* background-image: url("https://drive.google.com/uc?id=16JyWVkSklbnlESw1DyZJEwKznZ1PkVY4");
+  background-size: cover; 
+  background-color: white;
+  background-attachment: fixed; */
 }
 
 .div3 {
   height: 100vh;
-  background-image: url("https://drive.google.com/uc?id=1YiEdNK78TA8jqVWk1zWqTrz8MJORJ7Az");
-  background-size: cover;
   width: 100vw;
+  /* background-image: url("https://drive.google.com/uc?id=1YiEdNK78TA8jqVWk1zWqTrz8MJORJ7Az");
+  background-size: cover;
   background-color: white;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .div4 {
   height: 100vh;
-  background-image: url("https://drive.google.com/uc?id=1naYEy6GtZzAgOhfXGnPt3ukqo8A1FXVn");
-  background-size: cover;
   width: 100vw;
+  /* background-image: url("https://drive.google.com/uc?id=1naYEy6GtZzAgOhfXGnPt3ukqo8A1FXVn");
+  background-size: cover;
   background-color: white;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .div5 {
   height: 100vh;
-  background-image: url("https://drive.google.com/uc?id=1x5-Dk_rfGshFn8TauxbSPzXRy4SnFEn8");
-  background-size: cover;
   width: 100vw;
+  /* background-image: url("https://drive.google.com/uc?id=1x5-Dk_rfGshFn8TauxbSPzXRy4SnFEn8");
+  background-size: cover;
   background-color: white;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .div6 {
@@ -223,15 +232,16 @@
 .home-card-div {
   overflow: hidden;
   height: 90vh;
+  position: relative;
 }
 
 .home-card {
-  position: absolute;
+  position: relative;
   transform: scale(1.3);
   height: 80vh;
   max-width: 60vw;
   margin: auto;
-  margin-top: 35vh;
+  margin-top: 32vh;
   padding: 2vh;
   overflow: hidden;
 }
