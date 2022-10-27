@@ -191,13 +191,12 @@ const Home = () => {
                   <Card.Text>
                     I aim to have positive impacts and improve the lives of
                     others. I enjoy creating and building things. I care about
-                    diversity, inclusivity, equity, and bringing awareness. I
-                    look for growth mindsets and genuine connections. I value a
-                    team with initiative, and a leader that effectively guides
-                    and communicates with their team. I'm interested in being
-                    part of a committed group with hard-working people that
-                    values personal well-being, responsibility, and
-                    accountability.
+                    diversity, inclusivity, and equity. I look for growth
+                    mindsets and genuine connections. I value a team with
+                    initiative, and a leader that effectively guides and
+                    communicates with their team. I'm interested in being part
+                    of a committed group with hard-working people that values
+                    personal well-being, responsibility, and accountability.
                   </Card.Text>
                 </Card.Body>
               </Card>

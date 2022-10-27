@@ -170,7 +170,7 @@
   height: 100vh;
   background-image: url("https://drive.google.com/uc?id=16JyWVkSklbnlESw1DyZJEwKznZ1PkVY4");
   background-size: cover;
-  width: cover;
+  width: 100vw;
   background-color: lightgray;
   background-attachment: fixed;
 }
@@ -179,7 +179,7 @@
   height: 100vh;
   background-image: url("https://drive.google.com/uc?id=1YiEdNK78TA8jqVWk1zWqTrz8MJORJ7Az");
   background-size: cover;
-  width: cover;
+  width: 100vw;
   background-color: white;
   background-attachment: fixed;
 }
@@ -188,7 +188,7 @@
   height: 100vh;
   background-image: url("https://drive.google.com/uc?id=1naYEy6GtZzAgOhfXGnPt3ukqo8A1FXVn");
   background-size: cover;
-  width: cover;
+  width: 100vw;
   background-color: white;
   background-attachment: fixed;
 }
@@ -197,19 +197,12 @@
   height: 100vh;
   background-image: url("https://drive.google.com/uc?id=1x5-Dk_rfGshFn8TauxbSPzXRy4SnFEn8");
   background-size: cover;
-  width: cover;
+  width: 100vw;
   background-color: white;
   background-attachment: fixed;
 }
 
 .div6 {
-  /* padding-top: 10vh;
-  padding-left: 2vw;
-  height: 90vh;
-  background-size: cover;
-  width: cover;
-  background-attachment: fixed;
-  justify-content: center; */
   margin: 10vh;
   margin-top: 12vh;
   font-size: 25px;
@@ -390,5 +383,9 @@
 
   .div6-content {
     font-size: 15px;
+  }
+
+  #eg-img-div {
+    transform: scale(0.9);
   }
 }
