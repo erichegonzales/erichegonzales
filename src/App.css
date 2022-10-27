@@ -171,7 +171,6 @@
   background-image: url("https://drive.google.com/uc?id=16JyWVkSklbnlESw1DyZJEwKznZ1PkVY4");
   background-size: cover;
   width: 100vw;
-  background-color: lightgray;
   background-attachment: fixed;
 }
 
@@ -387,5 +386,6 @@
 
   #eg-img-div {
     transform: scale(0.9);
+    margin-bottom: -5vh;
   }
 }
